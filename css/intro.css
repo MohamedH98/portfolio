@@ -424,7 +424,7 @@ img {
 
 @media (max-width: 555px) {
   .photo-sat {
-    display: none;
+    /* display: none; */
   }
 }
 
