@@ -1,25 +1,28 @@
 // NAVBAR
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav-link");
+const navbar = document.querySelector("#header");
+const introArrow = document.querySelector("#intro-down-arrow");
+const blogArrow = document.querySelector("#blog-arrow");
+const firstKeySection = document.querySelector("#first-key-section");
+const secondKeySection = document.querySelector("#second-key-section");
 
 navToggle.addEventListener("click", () => {
   document.body.classList.toggle("nav-open");
 });
 
+// Hide nav when section selected
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     document.body.classList.remove("nav-open");
   });
 });
 
+// Make navbar sticky
+const sticky = navbar.offsetTop;
 window.onscroll = function () {
   myFunction();
 };
-
-var navbar = document.querySelector("#header");
-
-var sticky = navbar.offsetTop;
-
 function myFunction() {
   if (window.pageYOffset > sticky) {
     navbar.classList.add("sticky");
@@ -28,13 +31,22 @@ function myFunction() {
   }
 }
 
-// ABOUT ME
+// Scroll into view
+const bringSectionIntoView = (btn, section) => {
+  btn.addEventListener("click", (e) => {
+    section.scrollIntoView({ behavior: "smooth" });
+  });
+};
 
+bringSectionIntoView(introArrow, secondKeySection);
+bringSectionIntoView(blogArrow, firstKeySection);
+
+// Transitions
 AOS.init({
   easing: "ease-in-quad",
 });
 
-// Scrolling Wrapper
+// Blog Scrolling Wrapper
 
 const slider = document.querySelector(".scrolling-wrapper");
 let isDown = false;

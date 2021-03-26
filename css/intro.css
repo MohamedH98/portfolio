@@ -315,13 +315,14 @@ img {
 #about-me-title {
 }
 
-.down-arrow {
+.arrow {
   display: block;
   text-align: center;
   color: #3399ff;
   font-size: 50px;
   padding-bottom: 0;
   padding-top: 10px;
+  cursor: pointer;
 }
 #second-key-section {
   background: url(/img/transparent.png);
