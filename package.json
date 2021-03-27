@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedH98/portfolio.git"
+  },
+  "author": "Mohamed Hassan",
+  "license": "ISC",
+  "bugs": {
+  "url": "https://github.com/MohamedH98/portfolio/issues",
+  "devDependencies": {
+  "@babel/plugin-proposal-class-properties": "^7.13.0",
+  "@parcel/transformer-sass": "^2.0.0-beta.2",
+  "parcel": "^2.0.0-beta.2",
+  },
+  "homepage": "https://github.com/MohamedH98/portfolio#readme"
+}
