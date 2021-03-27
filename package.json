@@ -2,10 +2,13 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Personal Portfolio",
-  "main": "index.html",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  },
+  "devDependencies": {},
   "scripts": {
-    "start": "parcel serve index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -16,10 +19,5 @@
   "bugs": {
     "url": "https://github.com/MohamedH98/portfolio/issues"
   },
-  "homepage": "https://github.com/MohamedH98/portfolio#readme",
-  "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@parcel/transformer-sass": "^2.0.0-beta.2",
-    "parcel": "^2.0.0-beta.2"
-  }
+  "homepage": "https://github.com/MohamedH98/portfolio#readme"
 }

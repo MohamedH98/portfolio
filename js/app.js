@@ -1,3 +1,5 @@
+import "@babel/polyfill";
+
 // NAVBAR
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav-link");
@@ -6,6 +8,8 @@ const introArrow = document.querySelector("#intro-down-arrow");
 const blogArrow = document.querySelector("#blog-arrow");
 const firstKeySection = document.querySelector("#first-key-section");
 const secondKeySection = document.querySelector("#second-key-section");
+const navHome = document.querySelector("#nav-home");
+const navAbout = document.querySelector("#nav-about");
 
 navToggle.addEventListener("click", () => {
   document.body.classList.toggle("nav-open");
@@ -38,8 +42,10 @@ const bringSectionIntoView = (btn, section) => {
   });
 };
 
-bringSectionIntoView(introArrow, secondKeySection);
 bringSectionIntoView(blogArrow, firstKeySection);
+bringSectionIntoView(navHome, firstKeySection);
+bringSectionIntoView(introArrow, secondKeySection);
+bringSectionIntoView(navAbout, secondKeySection);
 
 // Transitions
 AOS.init({
