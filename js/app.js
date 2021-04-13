@@ -1,6 +1,3 @@
-import "@babel/polyfill";
-import "core-js/stable";
-
 // NAVBAR
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav-link");
